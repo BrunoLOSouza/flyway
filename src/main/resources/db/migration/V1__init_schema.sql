@@ -3,5 +3,8 @@ CREATE TABLE users (
     username VARCHAR2(50) NOT NULL,
     password VARCHAR2(100) NOT NULL,
     email VARCHAR2(100) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP,
+
+    CONSTRAINT uk_users_email UNIQUE (email)
 );
