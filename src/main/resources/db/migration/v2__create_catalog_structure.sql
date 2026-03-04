@@ -16,4 +16,4 @@ CREATE TABLE products (
     CONSTRAINT fk_category
         FOREIGN KEY (category_id)
         REFERENCES categories(id)
-)
+);
